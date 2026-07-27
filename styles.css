@@ -36,6 +36,35 @@ body.stars-bg .site-header {
   background-color: #f2f0f9;
 }
 
+/* At Penn: rotated gradient background, centered in the content area below the nav */
+body.gradient-bg {
+  background-color: #f2f0f9;
+}
+
+body.gradient-bg .site-header {
+  background-color: #f2f0f9;
+}
+
+body.gradient-bg .page-section {
+  position: relative;
+  min-height: calc(100vh - 94px);
+}
+
+body.gradient-bg::before {
+  content: "";
+  position: fixed;
+  top: 94px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("assets/gradient-rotated.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.45;
+  z-index: -1;
+}
+
 /* ---------- Header ---------- */
 
 .site-header {
