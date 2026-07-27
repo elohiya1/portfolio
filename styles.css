@@ -11,6 +11,31 @@ body {
   min-height: 100vh;
 }
 
+/* Preview: paper/grid background, header bar stays on the original lavender */
+body.paper-bg {
+  background-color: #fbfaf6;
+  background-image:
+    linear-gradient(#ececec 1px, transparent 1px),
+    linear-gradient(90deg, #ececec 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+body.paper-bg .site-header {
+  background-color: #f2f0f9;
+}
+
+/* Preview: light purple background with scattered star pattern */
+body.stars-bg {
+  background-color: #f2f0f9;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Cg fill='none' stroke='%23dcd3ea' stroke-width='3'%3E%3Cpolygon points='0,-45 11,-11 48,-11 18,10 29,45 0,24 -29,45 -18,10 -48,-11 -11,-11' transform='translate(60,70) rotate(-8) scale(0.28)'/%3E%3Cpolygon points='0,-45 11,-11 48,-11 18,10 29,45 0,24 -29,45 -18,10 -48,-11 -11,-11' transform='translate(230,55) rotate(12) scale(0.18)'/%3E%3Cpolygon points='0,-45 11,-11 48,-11 18,10 29,45 0,24 -29,45 -18,10 -48,-11 -11,-11' transform='translate(150,210) rotate(-15) scale(0.32)'/%3E%3Cpolygon points='0,-45 11,-11 48,-11 18,10 29,45 0,24 -29,45 -18,10 -48,-11 -11,-11' transform='translate(265,250) rotate(18) scale(0.2)'/%3E%3Cpolygon points='0,-45 11,-11 48,-11 18,10 29,45 0,24 -29,45 -18,10 -48,-11 -11,-11' transform='translate(15,255) rotate(10) scale(0.24)'/%3E%3Cpolygon points='0,-45 11,-11 48,-11 18,10 29,45 0,24 -29,45 -18,10 -48,-11 -11,-11' transform='translate(285,150) rotate(-12) scale(0.26)'/%3E%3Cpolygon points='0,-45 11,-11 48,-11 18,10 29,45 0,24 -29,45 -18,10 -48,-11 -11,-11' transform='translate(120,120) rotate(6) scale(0.16)'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 420px 420px;
+}
+
+body.stars-bg .site-header {
+  background-color: #f2f0f9;
+}
+
 /* ---------- Header ---------- */
 
 .site-header {
@@ -182,7 +207,7 @@ body {
 .experience-list {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 24px;
   flex: 1;
   padding: 12px 0;
 }
@@ -191,6 +216,8 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 24px;
+  background-color: #f2f0f9;
+  padding: 10px 20px;
 }
 
 .experience-logo {
