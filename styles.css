@@ -24,6 +24,7 @@ body {
   font-size: 28px;
   color: #7c8fb8;
   font-weight: 400;
+  text-decoration: none;
 }
 
 .site-nav {
@@ -51,9 +52,9 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 120px;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
-  padding: 90px 60px 160px;
+  padding: 90px 60px 60px;
 }
 
 .photo-wrap {
@@ -139,6 +140,94 @@ body {
   color: #6f83ab;
 }
 
+/* ---------- Generic page section ---------- */
+
+.page-section {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 60px 60px 60px;
+}
+
+.page-section h1 {
+  font-size: 34px;
+  font-weight: 400;
+  color: #6f83ab;
+}
+
+/* ---------- Experience ---------- */
+
+.experience-layout {
+  display: flex;
+  align-items: stretch;
+  gap: 60px;
+}
+
+.experience-heading {
+  flex: 0 0 220px;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 12px;
+}
+
+.experience-heading h1 {
+  margin: 0;
+}
+
+.experience-divider {
+  flex: 0 0 2px;
+  background: #6f83ab;
+  opacity: 0.4;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  flex: 1;
+  padding: 12px 0;
+}
+
+.experience-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.experience-logo {
+  flex: 0 0 auto;
+  width: 90px;
+  height: 90px;
+  background-color: #dcdfec;
+  background-size: cover;
+  background-position: center;
+}
+
+.experience-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.experience-role {
+  font-size: 20px;
+  color: #6f83ab;
+  font-weight: 400;
+}
+
+.experience-desc {
+  font-size: 15px;
+  color: #97a5c4;
+  font-weight: 300;
+}
+
+.experience-year {
+  margin-left: auto;
+  font-size: 19px;
+  color: #6f83ab;
+  font-weight: 300;
+}
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 900px) {
@@ -160,5 +249,9 @@ body {
 
   .about-text {
     padding-top: 0;
+  }
+
+  .page-section {
+    padding: 40px 30px 60px;
   }
 }
