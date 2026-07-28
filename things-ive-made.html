@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Things I&rsquo;ve Made — Esha Lohiya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo">EL</a>
+  <nav class="site-nav">
+    <a href="index.html">About</a>
+    <a href="experience.html">Experience</a>
+    <a href="projects.html">Projects</a>
+    <a href="at-penn.html">At Penn</a>
+    <a href="more.html" class="active">&amp; more</a>
+  </nav>
+</header>
+
+<main class="page-section" id="things-ive-made">
+  <h1>Things I&rsquo;ve Made</h1>
+  <p class="more-bio">Design projects, crafts, and baked goods I&rsquo;ve made recently &mdash; more coming soon.</p>
+  <p class="more-bio">
+    I&rsquo;ve always loved arts and crafts. Throughout the years, I&rsquo;ve explored
+    so many different art forms &mdash; watercolor to embroidery to jewelry and so much
+    more. I was super excited to include this page (and make this website in
+    general), because it allows me to showcase my creativity. I&rsquo;ve had so much
+    fun in the process :)
+  </p>
+  <p class="more-hint"><a href="more.html">&larr; back to &amp; more</a></p>
+
+  <div class="make-grid">
+    <button class="make-card" type="button" data-modal="tart">
+      <img src="assets/fruit_tart.png" alt="Fruit tart" class="make-thumb">
+      <span class="make-caption">Fruit Tart &mdash; Mother&rsquo;s Day 2026</span>
+    </button>
+    <button class="make-card" type="button" data-modal="pennant">
+      <img src="assets/pennant.png" alt="Esha pennant" class="make-thumb make-thumb-pennant">
+      <span class="make-caption">Pennant &mdash; Sketch to Logo</span>
+    </button>
+  </div>
+</main>
+
+<div class="lightbox" id="modal-tart" hidden>
+  <div class="lightbox-backdrop" data-close></div>
+  <div class="lightbox-box">
+    <button class="lightbox-close" type="button" data-close aria-label="Close">&times;</button>
+    <img src="assets/fruit_tart.png" alt="Fruit tart" class="lightbox-img">
+    <h2 class="lightbox-title">Fruit Tart &mdash; Mother&rsquo;s Day 2026</h2>
+    <p class="lightbox-desc">
+      I used to bake a lot more often. The last few years, I&rsquo;ve only gotten the
+      baking bug once a year or so. I usually make more simple desserts, like cookies
+      or rice krispie treats, but this May, I wanted to make something more
+      challenging. I really like fruit tarts and thought Mother&rsquo;s Day was a
+      fitting occasion. Looking back &mdash; I may have been a little in over my head:
+      making pastry cream from scratch is not easy. The fruit tart turned out well
+      though! I&rsquo;m excited to make one again, see if I improve, and share it with
+      my loved ones.
+    </p>
+  </div>
+</div>
+
+<div class="lightbox" id="modal-pennant" hidden>
+  <div class="lightbox-backdrop" data-close></div>
+  <div class="lightbox-box">
+    <button class="lightbox-close" type="button" data-close aria-label="Close">&times;</button>
+    <img src="assets/pennant.png" alt="Esha pennant" class="lightbox-img lightbox-img-pennant">
+    <h2 class="lightbox-title">Pennant &mdash; Sketch to Logo</h2>
+    <p class="lightbox-desc">
+      The day that I started making this website, my sister and I were discussing
+      activities she could do at her birthday party. On Pinterest, we came across
+      these felt pennants and thought they were super fun. I&rsquo;ve always loved
+      crafts, and this made me realize I want to express this creativity in my
+      personal website. I thought about how I could include a pennant on my
+      website, and my product design class &mdash; specifically when we talked
+      about designing logos and making sure they&rsquo;re vectorized &mdash; came
+      to mind. I decided I wanted to try and design a pennant logo or graphic I could
+      include on my personal website. After doing some research, I found
+      Linearity Curve to be the best tool for this. It definitely took me some
+      time, and I learned a lot through the process (partially documented
+      below), but I&rsquo;m very happy with how my first digital design project
+      came out. Excited to make more!
+    </p>
+    <p class="lightbox-label">Process</p>
+    <img src="assets/pennant_process.png" alt="Process board of the pennant design" class="lightbox-img">
+  </div>
+</div>
+
+<script src="assets/lightbox.js"></script>
+</body>
+</html>

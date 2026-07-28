@@ -73,12 +73,6 @@ document.addEventListener('DOMContentLoaded', function () {
       art: 'https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e029474419f15773875a495eed3'
     },
     {
-      title: 'Stay The Night',
-      artist: 'Zedd & Hayley Williams',
-      uri: 'spotify:track:1QelUxwsoFbryTRqzIou3L',
-      art: 'https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0239667b8510033317b3553ca4'
-    },
-    {
       title: 'Everybody Wants to Rule the World',
       artist: 'Tears For Fears',
       uri: 'spotify:track:3WzAUwTknLenOl3ak0ydlz',
