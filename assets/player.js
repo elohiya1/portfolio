@@ -67,12 +67,6 @@ document.addEventListener('DOMContentLoaded', function () {
       art: 'https://image-cdn-fa.spotifycdn.com/image/ab6742d3000052b72e19b72814c2988da531806a'
     },
     {
-      title: 'American Dream',
-      artist: 'MKTO',
-      uri: 'spotify:track:75snpZbtySwtSwHJtGLa1k',
-      art: 'https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e029474419f15773875a495eed3'
-    },
-    {
       title: 'Everybody Wants to Rule the World',
       artist: 'Tears For Fears',
       uri: 'spotify:track:3WzAUwTknLenOl3ak0ydlz',
@@ -148,5 +142,13 @@ document.addEventListener('DOMContentLoaded', function () {
   prevBtn.addEventListener('click', goPrev);
   playBtn.addEventListener('click', function () {
     if (controller) controller.togglePlay();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.code !== 'Space' && e.key !== ' ') return;
+    var tag = document.activeElement && document.activeElement.tagName;
+    if (/^(INPUT|TEXTAREA|SELECT|BUTTON|A)$/.test(tag)) return;
+    e.preventDefault();
+    goNext();
   });
 });
